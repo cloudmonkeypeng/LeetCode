@@ -8,16 +8,41 @@
 
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int maxProfit(vector<int> &prices) {
     
+    if (prices.size()<=1) {
+        return 0;
+    }
+    
+    int sum = 0;
+    
+    for (int i=1; i<prices.size(); i++) {
+        if(prices[i]>prices[i-1])
+            sum = sum+ prices[i]-prices[i-1];
+    }
+    return sum;
 }
+
+
+
 
 
 int main() {
    
-    cout<<maxProfit()<<endl;
+    vector<int> p;
+    
+    p.push_back(1);
+    
+    p.push_back(2);
+    
+    p.push_back(1);
+    
+    p.push_back(10);
+    
+    cout<<maxProfit(p)<<endl;
     return 0;
 }
