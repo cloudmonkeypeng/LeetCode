@@ -17,6 +17,7 @@
 
 
 #include <iostream>
+#include <queue>
 
 using namespace std;
 
@@ -47,20 +48,52 @@ int CreateBiTree(BiTree &T){
     return 0;
 }
 
-// Answer
+// Answer 1
 int maxDepth(TreeNode *root) {
-    if(!root){
-        return 0;
+
+    if(!root) return 0;
+
+    return 1+max(maxDepth(root->left),maxDepth(root->right));
+}
+
+
+//Answer 2  BFS in queue 
+int maxDepth2(TreeNode *root){
+
+    if(!root) return 0;
+    
+    int depth = 0;
+    
+    queue<TreeNode*> Q;
+    
+    Q.push(root);
+    int count =1;
+    
+    TreeNode *temp;
+    
+    while (!Q.empty()) {
+        
+        temp = Q.front();
+        
+        Q.pop();
+        
+        count--;
+        
+        if (temp->left) {
+            Q.push(temp->left);
+        }
+        
+        if (temp->right) {
+            Q.push(temp->right);
+        }
+        
+        if (count==0) {
+            depth++;
+            count = Q.size();
+        }
     }
     
-    int left = maxDepth(root->left);
-    int right = maxDepth(root->right);
-    
-    if(left>right){
-        return left+1;
-    }else{
-        return right+1;
-    }
+    return depth;
 }
 
 int main() {
