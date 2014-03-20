@@ -1,13 +1,11 @@
 LeetCode 
 ====================
-9/151
+24/151
 
 
 ToDoList
 ====================
-0. 23 / 151
-
-1. SingleNumber 其他算法
+1. SingleNumber 其他算法   各种SingleNumber变种
 
 2. LinkListCycle 原始数据录入
 
