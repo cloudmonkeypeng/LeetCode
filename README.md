@@ -1,6 +1,6 @@
 LeetCode 
 ====================
-30/151
+34/151
 
 
 ToDoList
@@ -19,4 +19,6 @@ ToDoList
 
 7. gray code
 
-8. 查一遍已经写的
+8. Permutations 
+
+9. 纸上刷一遍的
