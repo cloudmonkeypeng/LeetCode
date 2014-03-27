@@ -1,13 +1,13 @@
 LeetCode 
 ====================
-34/151
+38/151
 
 
 ToDoList
 ====================
 1. SingleNumber 其他算法   各种SingleNumber变种
 
-2. LinkListCycle 原始数据录入
+2. LinkListCycle 原始数据录入   I II 其他变种    编程之美
 
 3. Preorder Traversal  Inorder Traversal  非递归  Recursive solution is trivial, could you do it iteratively?
 
