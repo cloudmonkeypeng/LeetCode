@@ -1,6 +1,6 @@
 LeetCode 
 ====================
-65/151
+69/151
 
 
 ToDoList
@@ -9,7 +9,7 @@ ToDoList
 
 2. LinkListCycle 原始数据录入   I II 其他变种    编程之美
 
-3. Preorder Traversal  Inorder Traversal  非递归  Recursive solution is trivial, could you do it iteratively?
+3. Preorder Traversal  Inorder Traversal  postorder 非递归  Recursive solution is trivial, could you do it iteratively?
 
 4. 动态规划复习(Climbing Stairs )
 
@@ -24,3 +24,5 @@ ToDoList
 9. 纸上刷一遍的
 
 10. c++ 单引号 双引号 区别
+
+11 http://fisherlei.blogspot.com/2012/12/leetcode-recover-binary-search-tree.html   中序遍历 无堆栈
