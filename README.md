@@ -1,10 +1,12 @@
 LeetCode 
 ====================
-69/151
+73/151
 
 
 ToDoList
 ====================
+0. N-queuens II
+
 1. SingleNumber 其他算法   各种SingleNumber变种
 
 2. LinkListCycle 原始数据录入   I II 其他变种    编程之美
