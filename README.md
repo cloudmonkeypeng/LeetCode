@@ -1,6 +1,6 @@
 LeetCode 
 ====================
-91/151
+93/151
 
 
 ToDoList
@@ -32,3 +32,5 @@ ToDoList
 12 map边删除 边输出     红黑树
 
 13.set
+
+14.memset(row, true, 9*sizeof(bool));
