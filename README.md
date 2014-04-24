@@ -1,6 +1,6 @@
 LeetCode 
 ====================
-93/151
+97/151
 
 
 ToDoList
@@ -34,3 +34,9 @@ ToDoList
 13.set
 
 14.memset(row, true, 9*sizeof(bool));
+
+15.reserve
+
+16.unordered_map  与 map
+
+17.最大字段和
