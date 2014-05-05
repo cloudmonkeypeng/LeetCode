@@ -1,6 +1,6 @@
 LeetCode 
 ====================
-104/151
+106/151
 
 
 ToDoList
@@ -27,7 +27,7 @@ ToDoList
 
 10. c++ 单引号 双引号 区别
 
-11 http://fisherlei.blogspot.com/2012/12/leetcode-recover-binary-search-tree.html   中序遍历 无堆栈
+11 http://fisherlei.blogspot.com/2012/12/leetcode-recover-binary-search-tree.html   中序遍历 无堆栈 （前序 后序） 
 
 12 map边删除 边输出     红黑树
 
@@ -42,3 +42,5 @@ ToDoList
 17.最大字段和
 
 18.汉诺塔  排序堆的建立.....  推排序 相当于优先队列
+
+	
