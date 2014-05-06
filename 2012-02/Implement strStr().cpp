@@ -8,8 +8,7 @@ public:
     
     
     next =vector<int>(nlen,-1);
-    
-    
+
     for(int i=1,j=0;i<nlen;i++){
     
         if(needle[j]==needle[i]){
@@ -21,12 +20,7 @@ public:
             j=0;
         }
     }
-    
-//    for(int i=0;i<nlen;i++){
-//        cout<<next[i]<<" ";
-//    }
-//    cout<<endl;
-    
+
     return next;
 }
 
