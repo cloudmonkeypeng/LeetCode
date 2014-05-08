@@ -1,6 +1,6 @@
 LeetCode 
 ====================
-112/151
+114/151
 
 
 ToDoList
@@ -39,10 +39,13 @@ ToDoList
 
 16.unordered_map  与 map
 
-17.最大字段和
+17.最大m字段和 （动态规划？）  Maximum Subarray 是一个东西么？
 
 18.汉诺塔  排序堆的建立.....  推排序 相当于优先队列
 
 19.图的算法  kruskal prim dijstria flordy  似乎都拼错了。  拓扑排序
 
+20.b树等  哈希原理等
+
+21.三分查找  查询最值   三等分原理～～～
 	
