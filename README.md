@@ -1,6 +1,6 @@
 LeetCode 
 ====================
-117/151
+121/151
 
 
 ToDoList
@@ -13,7 +13,7 @@ ToDoList
 
 3. Preorder Traversal  Inorder Traversal  postorder 非递归  Recursive solution is trivial, could you do it iteratively?
 
-4. 动态规划复习(Climbing Stairs )
+4. 字符串常用操作
 
 5. Maximum Subarray
 
@@ -50,4 +50,7 @@ ToDoList
 21.三分查找  查询最值   三等分原理～～～
 
 22.Scramble String
+
+23.string size 跟length的区别
+
 	
