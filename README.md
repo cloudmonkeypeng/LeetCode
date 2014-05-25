@@ -1,10 +1,12 @@
 LeetCode 
 ====================
-121/151
+126/151
 
 
 ToDoList
 ====================
+－1。extern等各种东西  const
+
 0. N-queuens II
 
 1. SingleNumber 其他算法   各种SingleNumber变种
@@ -19,7 +21,7 @@ ToDoList
 
 6. Pow(x,n)  优化
 
-7. gray code
+7. gray code   valid number
 
 8. Permutations 
 
@@ -35,7 +37,7 @@ ToDoList
 
 14.memset(row, true, 9*sizeof(bool));
 
-15.reserve
+15.reserve  范型函数   
 
 16.unordered_map  与 map
 
@@ -53,4 +55,8 @@ ToDoList
 
 23.string size 跟length的区别
 
-	
+24.c++ prime 文字常量   第六章再看一下
+
+25.biset 位操作
+
+26.指向函数的指针
