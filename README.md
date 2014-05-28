@@ -1,13 +1,13 @@
 LeetCode 
 ====================
-126/151
+129/151
 
 
 ToDoList
 ====================
-－1。extern等各种东西  const
+－1。extern等各种东西  const!!! const
 
-0. N-queuens II
+0. N-queuens    ZigZag Conversion
 
 1. SingleNumber 其他算法   各种SingleNumber变种
 
