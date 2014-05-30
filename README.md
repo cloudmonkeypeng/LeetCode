@@ -1,11 +1,11 @@
 LeetCode 
 ====================
-129/151
+137/151
 
 
 ToDoList
 ====================
-－1。extern等各种东西  const!!! const
+－1。extern等各种东西  const!!! const  结构体类区别 好好总结一下  vector.erase
 
 0. N-queuens    ZigZag Conversion
 
