@@ -1,11 +1,11 @@
 LeetCode 
 ====================
-138/151
+139/151
 
 
 ToDoList
 ====================
-－1。extern等各种东西  const!!! const  结构体类区别 好好总结一下  vector.erase
+－1。extern等各种东西  const!!! const  结构体类区别 好好总结一下  vector.erase    常用英语
 
 0. N-queuens    ZigZag Conversion
 
@@ -13,9 +13,9 @@ ToDoList
 
 2. LinkListCycle 原始数据录入   I II 其他变种    编程之美
 
-3. Preorder Traversal  Inorder Traversal  postorder 非递归  Recursive solution is trivial, could you do it iteratively?
+3. Preorder Traversal  Inorder Traver sal  postorder 非递归  Recursive solution is trivial, could you do it iteratively?
 
-4. 字符串常用操作
+4. 字符串常用操作   字符串 各种转换
 
 5. Maximum Subarray
 
