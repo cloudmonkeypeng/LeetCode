@@ -1,9 +1,11 @@
-//leetcode 答案上面的 transform 不太会用，要复习
+#include <string>
+#include <vector>
+#include <iostream>
+#include <algorithm>
 
+using namespace std;
 
-class Solution {
-public:
-   string multiply(string num1, string num2) {
+string multiply(string num1, string num2) {
     
     reverse(num1.begin(),num1.end());
     
@@ -13,8 +15,6 @@ public:
     vector<int> num3(num1.size()+num2.size());
     
     for(int m=0;m<num1.size();m++){
-
-         if(num1[m]=='0') continue;
     
         for(int n=0;n<num2.size();n++){
         
@@ -37,11 +37,15 @@ public:
     
     for(int i=length;i>=0;i--)
         answer.push_back(num3[i]+'0');
-        
-    if(answer.size()==0) return "0";
     
     return answer;
 }
-        
 
-};
+int main(){
+
+    string s="123123",m="12312311";
+    
+    
+    cout<<multiply(s,m)<<endl;
+
+}
