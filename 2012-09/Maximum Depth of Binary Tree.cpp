@@ -57,6 +57,22 @@ int maxDepth(TreeNode *root) {
 }
 
 
+  int maxDepth(TreeNode *root) {
+   
+     if(root==nullptr) return 0;
+
+        int l = maxDepth(root->left);
+
+        int r =maxDepth(root->right);
+
+        if(l>r)
+            return l+1;
+        else
+            return r+1;
+
+    
+    }
+
 //Answer 2  BFS in queue 
 int maxDepth2(TreeNode *root){
 
