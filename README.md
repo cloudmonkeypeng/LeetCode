@@ -1,6 +1,6 @@
 LeetCode 
 ====================
-142/151
+146/151
 
 
 ToDoList
@@ -60,3 +60,5 @@ ToDoList
 25.biset 位操作
 
 26.指向函数的指针
+
+27.Scramble string 动态规划方法总结

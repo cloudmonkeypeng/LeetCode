@@ -11,8 +11,7 @@ public:
         for(int i=0;i<length;i++){
             b = "0"+b;
         }
-        int carry;
-        carry = 0;
+        int carry =  0;
         answer = "";
         for(int i=a.length()-1;i>=0;i--){
             int num = (int(a[i])-48)+ (int(b[i])-48)+carry;
