@@ -1,6 +1,6 @@
 LeetCode 
 ====================
-146/151
+149/151
 
 
 ToDoList
@@ -27,7 +27,7 @@ ToDoList
 
 9. 纸上刷一遍的
 
-10. c++ 单引号 双引号 区别
+10. c++ 单引号 双引号 区别  大概知道了
 
 11 http://fisherlei.blogspot.com/2012/12/leetcode-recover-binary-search-tree.html   中序遍历 无堆栈 （前序 后序） 
 
@@ -62,3 +62,7 @@ ToDoList
 26.指向函数的指针
 
 27.Scramble string 动态规划方法总结
+
+28.类中变量  和引用的区别？
+
+29.8皇后 II 简单算法
