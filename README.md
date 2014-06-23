@@ -5,7 +5,7 @@ LeetCode
 
 ToDoList
 ====================
-－1。extern等各种东西  const!!! const  结构体类区别 好好总结一下  vector.erase    常用英语  结构体初始化 :
+－1。extern等各种东西  const!!! const  结构体类区别 好好总结一下  vector.erase    常用英语  结构体初始化 
 
 0. N-queuens    ZigZag Conversion
 
@@ -31,7 +31,7 @@ ToDoList
 
 11 http://fisherlei.blogspot.com/2012/12/leetcode-recover-binary-search-tree.html   中序遍历 无堆栈 （前序 后序） 
 
-12 map边删除 边输出     红黑树
+12 map边删除 边输出  不太建议这么用。。。  以及其他基本用法  iterate    红黑树
 
 13.set
 
