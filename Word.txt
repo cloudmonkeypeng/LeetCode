@@ -3,3 +3,5 @@ anagrams  异序词
 duplicate characters  重复的词组
 
 single digit 个位数
+
+directed graph 有向图

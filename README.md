@@ -5,7 +5,9 @@ LeetCode
 
 ToDoList
 ====================
-－1。extern等各种东西  const!!! const  结构体类区别 好好总结一下  vector.erase    常用英语  结构体初始化 
+－1。extern等各种东西  const!!! const  结构体类区别 好好总结一下  vector.erase    常用英语  结构体初始化  template
+
+c++类的清空   delete     stl:list
 
 0. N-queuens    ZigZag Conversion
 
