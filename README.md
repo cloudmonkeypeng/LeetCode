@@ -5,9 +5,9 @@ LeetCode
 
 ToDoList
 ====================
-－1。extern等各种东西  const!!! const  结构体类区别 好好总结一下  vector.erase    常用英语  结构体初始化  template
+－1。extern等各种东西  const!!! const  结构体类区别 好好总结一下  vector.erase 结构体初始化  template
 
-c++类的清空   delete     stl:list
+c++类的清空   delete     stl:list   int,double最大值   throw error  虚函数
 
 0. N-queuens    ZigZag Conversion
 
@@ -25,9 +25,7 @@ c++类的清空   delete     stl:list
 
 7. gray code   valid number
 
-8. Permutations 
-
-9. 纸上刷一遍的
+8. Permutations (交换 取子集两种方式)
 
 10. c++ 单引号 双引号 区别  大概知道了
 
@@ -70,3 +68,7 @@ c++类的清空   delete     stl:list
 29.8皇后 II 简单算法
 
 29.搜索分为广搜和深搜,广搜里面又有普通广搜,双向广搜,A* 搜索等。深搜里面又有 普通深搜,回溯法等。
+
+30.c++ 建set map的时间复杂度
+
+31.volatile在声明上的使用和const是一样的。volatile在*号左边， 修饰的是指针所指物；在*号右边修饰的是指针。

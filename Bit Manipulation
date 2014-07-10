@@ -1,1 +1,53 @@
-Bit Manipulation
+//常用操作
+
+x&1  判断最后一位（很简单，总忘）
+
+判断二进制多少位:
+
+判断总共多少个1:
+
+//CC  5.1
+
+
+void swap(int a,int b){
+	
+	a = a^b;
+
+	b = a^b;
+
+	a = a^b;
+}
+
+
+#include <iostream>
+#include <bitset>
+
+using namespace std;
+
+int  setMtoN(int N,int M,int i,int j){
+
+
+    int max = ~0;
+    
+    int left = max-((1<<j)-1);
+    
+    int right = (1<<i)-1;
+    
+    int task = left|right;
+    
+    return (task&N)|(M<<i);
+    
+
+}
+
+
+int main(){
+
+    int n = 1<<10, m = 21;
+    
+    
+    int answer = setMtoN(n, m, 2, 6);
+    
+    bitset<32> bs(answer);
+    cout<<bs;
+}
