@@ -8,9 +8,11 @@ x&1  判断最后一位（很简单，总忘）
 
 //CC  5.1
 
-
-void swap(int a,int b){
+//c++内置？
+void swap(int &a,int &b){
 	
+    if(a==b) return ;  //如果a=b就爆掉了
+
 	a = a^b;
 
 	b = a^b;
