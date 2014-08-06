@@ -1,29 +1,20 @@
 class Solution {
 public:
     vector<int> plusOne(vector<int> &digits) {
-        
-        int n = digits.size()-1;
-        
-        bool temp = false;
-        
-        do{
-            if(digits[n]+1==10){
-                digits[n] = 0;
-                temp = true;
-                n--;
-            }else{
-                digits[n] = digits[n]+1;
+
+        for(int i=digits.size()-1;i>=0;i--){
+
+            digits[i] +=1;
+
+            if(digits[i]>=10){
+                digits[i] = 0;
+            }else
                 return digits;
-            } 
-        }while(temp&&n>=0);
+        }
+
+        digits.insert(digits.begin(),1);
+
+        return digits;
         
-        vector<int> answers;
-        
-        answers.push_back(1);
-        
-        for(int i=0;i<digits.size();i++)
-            answers.push_back(0);
-        
-        return answers;
     }
 };

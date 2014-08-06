@@ -1,90 +1,169 @@
 //kmp
 
-class Solution {
+#include <vector>
+#include <string>
+#include <iostream>
+
+
+using namespace std;
+
+
+class Solution{
+    
 public:
-  vector<int> getNext(char *needle,int nlen){
     
-    vector<int> next;
-    
-    
-    next =vector<int>(nlen,-1);
-
-    for(int i=1,j=0;i<nlen;i++){
-    
-        if(needle[j]==needle[i]){
+    vector<int> getNext(string p,int nlen){
         
-            next[i] = next[i-1]+1;
+        vector<int> next(p.length(),-1);
+        
+        
+        int pLen = p.length();
+        
+        int k = -1;
+        int j = 0;
+        while (j < pLen - 1){
             
-            j++;
-        }else{
-            j=0;
+            if (k == -1 || p[j] == p[k]){
+                
+                ++j;
+                ++k;
+                
+                next[j] = k;
+            
+            }
+            else{
+                
+                k = next[k];
+            }
         }
+        
+        return next;
     }
-
-    return next;
-}
-
-char *strStr(char *haystack, char *needle) {
-    if(haystack == NULL || needle == NULL)
-        return NULL;
     
-    int hLen = strlen(haystack);
-    int nLen = strlen(needle);
+    int strStr(string haystack, string needle) {
     
-    if(hLen<nLen)
-        return NULL;
-    
-    vector<int> next;
-    
-    next = getNext(needle,nLen);
-    
-    
-    for(int i=0,j=0;i<hLen-nLen+1;){
+        if(haystack.length()==0 || needle.length()==0)
+            return 0;
         
-        for(;j<nLen&&i+j<hLen&&haystack[i+j]==needle[j];j++);
+        int hLen = haystack.length();
+        int nLen = needle.length();
         
-        if(j==nLen) return haystack+i;
+        if(hLen<nLen)
+            return 0;
         
-        if(j>0){
+       
+        
+        vector<int> next = getNext(needle, nLen);
+        
+        int ans = 0;
+        
+        int i=0;
+        int j=0;
+        
+        while(i<hLen){
             
-            i = i+j -next[j-1]-1;
-            j = next[j-1]+1;
-        
-        }else{
+            if(j==-1||haystack[i]==needle[j]){
             
-            i++;
-            j = 0;
+                i++;
+                j++;
+                
+            }else{
+                
+                j = next[j];
+                
+            }
+            
+            if(j==nLen){
+            
+                ans++;
+                
+                i--;
+                
+                j--;
+                
+                j = next[j];
+                
+            }
+            
         }
+        
+        return ans;
+    
     }
-    return NULL;
-}
- 
+    
 };
+
+int main(){
+
+    int num;
+    
+    cin>>num;
+    
+    while(num>0){
+    
+        class Solution sol;
+        
+        string needle;
+        
+        string haystack;
+        
+        cin>>needle;
+        
+        cin>>haystack;
+        
+        
+        int ans = sol.strStr(haystack, needle);
+        
+        cout<<ans<<endl;
+        
+        num--;
+    }
+    
+    return 0;
+   
+}
+
 
 
 ///最普通方法
 
-class Solution {
+//注意判断  haystack = "" 与  needle="" 的情况
+
+class Solution{
+    
 public:
     char *strStr(char *haystack, char *needle) {
-      if(haystack == NULL || needle == NULL)
-        return NULL;
-    int hLen = strlen(haystack);
-    int nLen = strlen(needle);
-    if(hLen<nLen)          return NULL;
-    for(int i=0; i<hLen - nLen+1; i++)
-    {
+        
+        if(haystack==NULL||needle==NULL)
+            return NULL;
+        
+        int hlen = strlen(haystack);
+        
+        int nlen = strlen(needle);
+        
+        if(hlen<nlen) return NULL;
+        
+        int i=0;
+        
         int j=0;
-        char *p = &haystack[i];
-        for(; j< nLen; j++)
-        {
-            if(*p != needle[j])
-                break;
-            p++;
+        
+        for(;i<hlen - nlen+1;){
+            
+            while(haystack[i]==needle[j]&&i<hlen&&j<nlen){
+                i++;
+                j++;
+            }
+            
+            if(j==nlen)
+                return &haystack[i-j];
+            
+            j = next[j];
+            
         }
-        if(j == nLen)
-            return &haystack[i];
+        
+        
+        
+        return NULL;
     }
-    return NULL;
-    }
+    
 };

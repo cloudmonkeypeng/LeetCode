@@ -30,7 +30,7 @@ string longestPalindrome(string s) {
     int P[n];
     
     int C = 0; // c中心
-    int R = 0; // R半径最原点
+    int R = 0; // R半径最远点
     
     for (int i = 2; i < n - 1; i++) {
         

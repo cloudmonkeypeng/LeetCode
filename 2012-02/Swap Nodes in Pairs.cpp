@@ -40,3 +40,54 @@ public:
         
     }
 };
+
+
+//新写的解法
+
+class Solution {
+public:
+    ListNode *swapPairs(ListNode *head) {
+        
+        if(head==NULL||head->next==NULL)
+            return head;
+        
+        ListNode *root = new ListNode(-1);
+        
+        root->next = head;
+        
+        ListNode *prev,*cur,*next;
+        
+        prev = root;
+        
+        cur = head;
+        
+        next = head->next;
+        
+        while(cur!=NULL&&next!=NULL){
+        
+            prev->next = next;
+            
+            cur->next = next->next;
+            
+            next->next = cur;
+            
+            prev =cur;
+            
+            cur = cur->next;
+            
+            if(cur!=NULL)
+                next = cur->next;
+            else
+                break;
+        }
+        
+        ListNode *temp = root->next;
+        
+        delete root;
+        
+        root = NULL;
+        
+        return temp;
+        
+    }
+};

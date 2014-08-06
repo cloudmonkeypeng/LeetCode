@@ -39,3 +39,33 @@ public:
         return root->next;
     }
 };
+
+
+//递归方法
+
+
+class Solution {
+public:
+    ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
+        
+        if(l1==NULL)
+            return l2;
+        
+        if(l2==NULL)
+            return l1;
+        
+        ListNode *temp,*cur;
+        
+        if(l1->val<=l2->val){
+            temp = mergeTwoLists(l1->next,l2);
+            cur = l1;
+        }else{
+            temp = mergeTwoLists(l1,l2->next);
+            cur =l2;
+        }
+        
+        cur ->next = temp;
+        
+        return cur;
+    }
+};

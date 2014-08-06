@@ -10,8 +10,6 @@ public:
     
     void sortColors(int A[], int n) {
         
-        if(n<=1) return;
-        
         int first=0;
         int end=n-1;
         

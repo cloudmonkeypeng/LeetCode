@@ -35,3 +35,7 @@ denormalize 反范式
 thread 线程控制
 
 process 进程控制
+
+Longest Palindromic Substring 最长回文串
+
+进位 carry
