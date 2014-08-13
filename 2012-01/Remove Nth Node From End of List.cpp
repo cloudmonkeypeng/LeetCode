@@ -1,3 +1,5 @@
+//没有检验n过长
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
