@@ -14,6 +14,8 @@ ToDoList
 
 3. Preorder Traversal  Inorder Traver sal  postorder 非递归  不用栈！
 
+https://oj.leetcode.com/discuss/3339/o-1-space-o-n-complexity-iterative-solution
+
 4. 字符串常用操作   字符串 各种转换
 
 6. Pow(x,n)  优化

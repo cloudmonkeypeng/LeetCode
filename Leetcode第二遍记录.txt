@@ -1,3 +1,5 @@
+//说实话 这么列在这里完全没有统计作用，只是为了心里的快感，按照顺序刷少了一两个很正常....
+
 B----------------------------
 Balanced Binary Tree
 Best Time to Buy and Sell Stock 
@@ -10,6 +12,7 @@ Binary Tree Preorder Traversal
 
 C----------------------------
 Climbing Stairs
+Combinations
 Container With Most Water
 Convert Sorted Array to Binary Search Tree
 
@@ -21,10 +24,14 @@ Implement strStr()
 Integer to Roman 
 
 P----------------------------
-Pascal's Triangle 
+Pascal's Triangle
+Pascal's Triangle II			[注意long long
+] 
+Path Sum
 Permutations 
 Plus One
-Populating Next Right Pointers in Each Node 
+Populating Next Right Pointers in Each Node
+Populating Next Right Pointers in Each Node II 
 
 L----------------------------
 Largest Rectangle in Histogram	[堆栈记录堆叠，堆栈内从小到大递增］
@@ -55,11 +62,12 @@ Search a 2D Matrix 				[这道题最快的其实是二分查找]
 Single Number
 Single Number II 				［不赋初值的错误也能犯］
 Sort Colors 
+Spiral Matrix II
 Swap Nodes in Pairs 
 Symmetric Tree 
 
 T----------------------------
-Trapping Rain Water
+Trapping Rain Water				[可以一遍解决]
 
 U---------------------------
 Unique Binary Search Trees
