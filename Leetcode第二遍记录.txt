@@ -25,8 +25,7 @@ Integer to Roman
 
 P----------------------------
 Pascal's Triangle
-Pascal's Triangle II			[注意long long
-] 
+Pascal's Triangle II			[注意long long] 
 Path Sum
 Permutations 
 Plus One
@@ -35,6 +34,7 @@ Populating Next Right Pointers in Each Node II
 
 L----------------------------
 Largest Rectangle in Histogram	[堆栈记录堆叠，堆栈内从小到大递增］
+Length of Last Word
 Linked List Cycle 
 Longest Palindromic Substring
 
@@ -43,6 +43,7 @@ Maximum Depth of Binary Tree
 Maximum Subarray
 Merge Two Sorted Lists 
 Merge Sorted Array 
+Minimum Depth of Binary Tree 
 Minimum Path Sum 
 
 N----------------------------
@@ -52,6 +53,7 @@ R---------------------------
 Remove Element 
 Remove Duplicates from Sorted Array 
 Remove Duplicates from Sorted List [注意释放掉删除的指针]
+Remove Nth Node From End of List 
 Reverse Integer					[注意超出的溢出]
 Roman to Integer 
 Rotate Image 
@@ -63,6 +65,7 @@ Single Number
 Single Number II 				［不赋初值的错误也能犯］
 Sort Colors 
 Spiral Matrix II
+Sum Root to Leaf Numbers 
 Swap Nodes in Pairs 
 Symmetric Tree 
 

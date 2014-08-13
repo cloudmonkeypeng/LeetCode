@@ -13,29 +13,19 @@ public:
         
         if(root==NULL) return 0;
         
-        if((root->left==NULL)&&(root->right==NULL)) return 1;
+        if(root->left==NULL&&root->right==NULL)
+            return 1;
         
+        int l = INT_MAX;
         
-        int left = 0;
+        if(root->left!=NULL)
+            l = minDepth(root->left);
+            
+        int r = INT_MAX;
         
-        int right = 0;
+        if(root->right!=NULL)
+            r = minDepth(root->right);
         
-        int height;
-        
-        left = minDepth(root->left);
-        
-        right = minDepth(root->right);
-        
-       
-        if(right==0) return left +1;
-        
-        if(left==0) return right+1;
-        
-        
-        if(left>right){
-            return  right+1;
-        }else{
-            return left+1;
-        }
+        return min(r,l)+1;
     }
 };
