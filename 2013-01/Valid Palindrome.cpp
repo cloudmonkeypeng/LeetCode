@@ -1,4 +1,4 @@
-class Solution {
+22class Solution {
 public:
     bool isPalindrome(string s) {
         

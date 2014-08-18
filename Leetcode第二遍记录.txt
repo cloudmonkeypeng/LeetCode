@@ -1,5 +1,7 @@
 //说实话 这么列在这里完全没有统计作用，只是为了心里的快感，按照顺序刷少了一两个很正常....
 
+3Sum Closest 
+
 B----------------------------
 Balanced Binary Tree
 Best Time to Buy and Sell Stock 
@@ -16,14 +18,22 @@ Combinations
 Container With Most Water
 Convert Sorted Array to Binary Search Tree
 
+F---------------------------
+Flatten Binary Tree to Linked List 	[注意分析问题]
+
 G---------------------------
 Generate Parentheses
+Gray Code
+
+J---------------------------
+Jump Game 
 
 I----------------------------
 Implement strStr()
 Integer to Roman 
 
 P----------------------------
+Palindrome Number 
 Pascal's Triangle
 Pascal's Triangle II			[注意long long] 
 Path Sum
@@ -36,7 +46,9 @@ L----------------------------
 Largest Rectangle in Histogram	[堆栈记录堆叠，堆栈内从小到大递增］
 Length of Last Word
 Linked List Cycle 
+Linked List Cycle II 
 Longest Palindromic Substring
+Longest Consecutive Sequence
 
 M----------------------------
 Maximum Depth of Binary Tree
@@ -51,7 +63,8 @@ N-Queens II
 
 R---------------------------
 Remove Element 
-Remove Duplicates from Sorted Array 
+Remove Duplicates from Sorted Array
+Remove Duplicates from Sorted Array II 	［别发蒙！］
 Remove Duplicates from Sorted List [注意释放掉删除的指针]
 Remove Nth Node From End of List 
 Reverse Integer					[注意超出的溢出]
@@ -61,21 +74,31 @@ Rotate Image
 S----------------------------
 Same Tree
 Search a 2D Matrix 				[这道题最快的其实是二分查找]
+Search in Rotated Sorted Array	[第一遍还是没写对]
+Search in Rotated Sorted Array II [别太大意,left检测]
+Search for a Range 
+Set Matrix Zeroes
 Single Number
 Single Number II 				［不赋初值的错误也能犯］
 Sort Colors 
 Spiral Matrix II
+Subsets
+Subsets II 
 Sum Root to Leaf Numbers 
 Swap Nodes in Pairs 
 Symmetric Tree 
 
 T----------------------------
 Trapping Rain Water				[可以一遍解决]
+Triangle
 
 U---------------------------
 Unique Binary Search Trees
+Unique Binary Search Trees II
 Unique Paths
+Unique Paths II 
 
 V----------------------------
+Valid Sudoku
 Valid Palindrome
-
+Valid Parentheses 				[特殊值判断]

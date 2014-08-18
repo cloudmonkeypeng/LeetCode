@@ -1,3 +1,5 @@
+//这道题的边界情况，其实很特殊
+
 class Solution {
 public:
     vector<int> grayCode(int n) {

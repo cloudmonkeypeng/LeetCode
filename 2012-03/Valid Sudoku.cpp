@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool isValidSudoku(vector<vector<char> > &board) {
+Ï  bool isValidSudoku(vector<vector<char> > &board) {
         
         
         if(board.size() == 0) return false;  
