@@ -60,8 +60,10 @@ myString::myString(const myString &other){
 
 myString::~myString(){
     
-    if(m_data!=NULL)
+    if(m_data!=NULL){
     	delete []m_data;
+    	m_data = NULL;
+    }
 }
 
 myString & myString::operator=(const myString &other){
