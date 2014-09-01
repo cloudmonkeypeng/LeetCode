@@ -28,13 +28,19 @@ public:
             while(first<last&&key<=numbers[last])
                 last--;
             
-            numbers[first] = numbers[last];
-            
+            if(first<last){
+                numbers[first] = numbers[last];
+                first++;
+            }
+
             while(first<last&&key>=numbers[first])
                 first++;
             
-            numbers[last] = numbers[first];
-            
+            if(first<last){
+                
+                numbers[last] = numbers[first];
+                last--;
+            }
         }
         
         numbers[first] = key;

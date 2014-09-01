@@ -12,7 +12,7 @@ public:
 	myString & operator = (const myString &other);
     
 private:
-	char *m_data;
+	char* m_data;
 };
 
 
@@ -60,23 +60,24 @@ myString::myString(const myString &other){
 
 myString::~myString(){
     
-    delete []m_data;
-    
+    if(m_data!=NULL)
+    	delete []m_data;
 }
 
 myString & myString::operator=(const myString &other){
-    
-    if(this==&other)
-        return *this;
-    
-    delete []m_data;
-    
-    int length = strlen(other.m_data);
-    
-    m_data = new char[length+1];
-    
-    strcpy(m_data, other.m_data);
-    
+
+    if(this!=&ohter){
+
+    	myString strTemp(other);
+
+    	char *pTmp = strTemp.m_data;
+
+    	strTemp.m_data = m_data;
+
+    	m_data = pTmp;
+
+    }
+
     return *this;
 }
 

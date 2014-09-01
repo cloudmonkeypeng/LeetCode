@@ -12,7 +12,18 @@ const
 
 #define
 ====================
+有问题的写法： #define min(X,Y) ((X) < (Y) ? (X) : (Y))
 
+正确写法： 
+#define min(X,Y)  
+(__extension__  
+({  
+   typeof(X) __x=(X), __y=(Y);   
+   (__x<__y)?__x:__y;  
+}) 
+) 
+
+更奇葩的写法：#define min(x,y) ({ typeof(x) _x = (x); typeof(y) _y = (y); (void) (&_x == &_y); _x < _y ? _x : _y; })
 
 
 sizeof()
