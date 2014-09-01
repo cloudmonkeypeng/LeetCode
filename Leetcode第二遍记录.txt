@@ -11,6 +11,7 @@ Binary Tree Level Order Traversal
 Binary Tree Level Order Traversal II
 Binary Tree Postorder Traversal
 Binary Tree Preorder Traversal 
+Binary Tree Zigzag Level Order Traversal
 
 C----------------------------
 Climbing Stairs
@@ -37,6 +38,7 @@ Palindrome Number
 Pascal's Triangle
 Pascal's Triangle II			[注意long long] 
 Path Sum
+Path Sum II
 Permutations 
 Plus One
 Populating Next Right Pointers in Each Node
@@ -47,6 +49,7 @@ Largest Rectangle in Histogram	[堆栈记录堆叠，堆栈内从小到大递增
 Length of Last Word
 Linked List Cycle 
 Linked List Cycle II 
+Longest Common Prefix 
 Longest Palindromic Substring
 Longest Consecutive Sequence
 

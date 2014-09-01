@@ -23,7 +23,7 @@ public:
 
  private:
 
- 	 static UndirectedGraphNode* clone(const UndirectedGraphNode *node,
+ 	 static UndirectedGraphNode* (ccloneonst UndirectedGraphNode *node,
                                       unordered_map<const UndirectedGraphNode *,UndirectedGraphNode *> &copied) {
         // a copy already exists
         if (copied.find(node) != copied.end()) return copied[node];
