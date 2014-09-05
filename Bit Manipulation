@@ -37,7 +37,7 @@ int funct(int x){
 //c++内置？
 void swap(int &a,int &b){
 	
-    if(a==b) return ;  //如果a=b就爆掉了
+    if(a==b) return ;  //如果swap(a,a)就爆掉了
 
 	a = a^b;
 

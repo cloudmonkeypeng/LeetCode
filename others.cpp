@@ -1,5 +1,3 @@
-New delete 与mallocfree 的联系与区别
-
 指针 字符串删除
 
 vector.erase
