@@ -72,3 +72,27 @@ int main() {
     cout<<isValidBST(T);
     return 0;
 }
+
+///////又tm被虐了
+
+//很好的方法:如下
+
+
+
+class Solution {
+public:
+    bool isValidBST(TreeNode *root) {
+        
+        return isValidBST(root,INT_MAX,INT_MIN);
+        
+    }
+    
+    bool isValidBST(TreeNode *root,int min,int max){
+    
+        if(root==NULL)
+            return true;
+        
+        return root->val>min&&root->val<max&&isValidBST(root->left, min, root->val)&&isValidBST(root->right,root->val,max);
+    
+    }
+};

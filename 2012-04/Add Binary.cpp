@@ -1,43 +1,58 @@
 class Solution {
 public:
     string addBinary(string a, string b) {
-        string answer;
-        if(b.length()>a.length()){
-            answer = a;
-            a = b;
-            b = answer;
-        }
-        int length =a.length()-b.length();
-        for(int i=0;i<length;i++){
-            b = "0"+b;
-        }
-        int carry =  0;
-        answer = "";
-        for(int i=a.length()-1;i>=0;i--){
-            int num = (int(a[i])-48)+ (int(b[i])-48)+carry;
-            if(num==0){
-                answer = "0"+answer;
-                carry = 0;
-            }
-            if(num==1){
-                answer = "1"+answer;
-                carry = 0;
-            }
-            if(num==2){
-                answer = "0"+answer;
-                carry = 1;
-            }
-            if(num==3){
-                answer = "1"+answer;
-                carry = 1;
-            }
+        
+        if(a.size()==0)
+            return b;
+        
+        if(b.size()==0)
+            return a;
+        
+        int num = abs((int)a.length()-(int)b.length());
+        
+        string temp = string(num,'0');
+        
+        if(a.length()>b.length()){
+        
+            b.insert(b.begin(), temp.begin(),temp.end());
+            
+        }else{
+        
+            a.insert(a.begin(), temp.begin(), temp.end());
         }
         
-        if(carry){
-            return "1"+answer;
-        }else{
-            if(answer=="0") return "0";
-            return string(answer);
+        
+        int carry = 0;
+        
+        for(int i= (int)a.length()-1;i>=0;i--){
+        
+            a[i] = a[i] +b[i] -'0'+carry;
+            
+            if(a[i]=='3'){
+                
+                a[i] ='1';
+                
+                carry =1;
+                
+            }else if(a[i]=='2'){
+            
+                a[i]='0';
+                
+                carry = 1;
+                
+            }else {
+                carry = 0;
+            }
+        
         }
+        
+        if(carry!=0){
+        
+            a.insert(a.begin(), '1');
+        }
+        
+        return a;
+        
+        
     }
 };

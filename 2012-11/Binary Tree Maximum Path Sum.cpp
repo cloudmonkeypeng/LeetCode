@@ -26,3 +26,43 @@ private:
     return max(r, l) > 0 ? max(r, l) + root->val : root->val;
   }
 };
+
+
+//自己写的
+class Solution {
+public:
+    int maxPathSum(TreeNode *root) {
+        
+        if(root==NULL)
+            return ans;
+        
+        findMaxWay(root);
+        
+        return ans;
+        
+    }
+private:
+    
+    int ans = INT_MIN;
+    
+    
+    int findMaxWay(TreeNode *root){
+    
+    
+        if(root==NULL)
+            return 0;
+        
+        int left = findMaxWay(root->left);
+        
+        int right = findMaxWay(root->right);
+        
+        int temp = max(root->val,max(root->val+left+right,root->val+max(left,right)));
+    
+        ans = max(ans,temp);
+        
+        return max(root->val,max(root->val+left,root->val+right));
+        
+    }
+    
+    
+};

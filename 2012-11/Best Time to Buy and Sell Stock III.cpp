@@ -1,59 +1,48 @@
 class Solution {
 public:
     int maxProfit(vector<int> &prices) {
-    if(prices.size()<=1) return 0;
-    
-    int max = 0;
-    
-    int start =0;
-    
-    vector<int> first;
-    vector<int> second;
-    
-    int answer = 0;
-    
-    
-    for(int i=1;i<prices.size();i++){
         
-        start = start + prices[i]- prices[i-1];
+        if(prices.size()<=1)
+            return 0;
         
-        if(start<0) start = 0;
+        vector<int> temp = vector<int>(prices.size(),0);
         
-        if(start>max) max =start;
+        int count = 0;
         
-        first.push_back(max);
+        int ans = 0;
+        
+        for(int i=1;i<prices.size();i++){
+        
+            if(count<0) count = 0;
+            
+            count += prices[i] - prices[i-1];
+            
+            ans = max(ans,count);
+            
+            temp[i] = ans;
+        }
+        
+        ans = INT_MIN;
+        
+        int realAns = temp[temp.size()-1];
+        
+        count = 0;
+        
+        for(int i=(int)prices.size()-2;i>=0;i--){
+            
+            if(count<0) count = 0;
+            
+            count += prices[i+1] - prices[i];
+            
+            ans = max(count,ans);
+            
+            if(i>0)
+                realAns = max(realAns,temp[i-1]+ans);
+            else
+                realAns = max(realAns,ans);
+        }
+    
+        return realAns;
+        
     }
-    
-    
-    
-    start =0;max =0;
-    
-    second.push_back(0);
-    
-    for(int i= prices.size()-1;i>0;i--){
-        
-        start = start +prices[i]- prices[i-1];
-        
-        if(start<0) start = 0;
-        
-        if(start>max) max =start;
-    
-        second.push_back(max);
-        
-    }
-    
-    
-    int temp =0;
-    
-    for(int i=0;i<first.size();i++){
-        temp = first[i] + second[second.size()-i-2];
-        if(temp>answer) answer =temp;
-    }
-    
-    
-    return answer;
-}
-
-
-
 };

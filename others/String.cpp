@@ -33,8 +33,17 @@ myString::myString(const char* str){
 		if(m_data!=NULL)
 			delete []m_data;
 		
+		try{
+
+			m_data = new char[length+1];
+
+		}catch( const bad_alloc& e ){
+
+			return -1;
+
+		}
+
 		
-		m_data = new char[length+1];
         
 		strcpy(m_data,str);
         
@@ -52,7 +61,16 @@ myString::myString(const myString &other){
     
 	int length = strlen(other.m_data);
     
-	m_data = new char[length+1];
+	try{
+
+		m_data = new char[length+1];
+
+	}catch( const bad_alloc& e ){
+
+		return -1;
+
+	}
+
     
 	strcpy(m_data,other.m_data);
     

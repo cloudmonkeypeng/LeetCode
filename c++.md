@@ -9,9 +9,18 @@
 # static
 
 
-# const
-只读
 
+
+# const
+
+//情况1和2 是一样的
+//关键在于const 和 *的关系
+//情况1和2 指针不是常量,情况3指针是常量
+const int * a = &b
+
+int const *a  = &b
+
+int* const a = &b
 
 # #define
 
@@ -77,6 +86,9 @@ y = !x++;
 
 # 模板类
 
-
-
 # public private protected
+
+# volatile
+
+
+#父类指针只向子类对象

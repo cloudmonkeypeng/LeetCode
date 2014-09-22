@@ -20,8 +20,6 @@ https://oj.leetcode.com/discuss/3339/o-1-space-o-n-complexity-iterative-solution
 
 6. Pow(x,n)  优化
 
-7. 快速排序  sort color
-
 8. Permutations (交换 取子集两种方式)
 
 9. Trie树

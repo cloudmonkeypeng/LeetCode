@@ -41,3 +41,55 @@ public:
         return new_node;
     }
 };
+
+
+
+///广度优先遍历，一次通过
+
+class Solution {
+public:
+    UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node) {
+        
+        if(node==NULL)
+            return node;
+        
+        
+        unordered_map<UndirectedGraphNode *, UndirectedGraphNode *> map;
+        
+        UndirectedGraphNode *root =new UndirectedGraphNode(node->label);
+        
+        map[node] = root;
+        
+        queue<UndirectedGraphNode *> q;
+        
+        q.push(node);
+        
+        
+        while(!q.empty()){
+        
+            UndirectedGraphNode *temp = q.front();
+            
+            q.pop();
+            
+            for(int i=0;i<temp->neighbors.size();i++){
+            
+                if(map.find(temp->neighbors[i])==map.end()){
+                
+                    UndirectedGraphNode *tempNewGraph =new UndirectedGraphNode(temp->neighbors[i]->label);
+                    
+                    map[temp->neighbors[i]] = tempNewGraph;
+                    
+                    q.push(temp->neighbors[i]);
+                }
+                
+                
+                map[temp]->neighbors.push_back(map[temp->neighbors[i]]);
+            }
+        
+        
+        }
+
+        return root;
+    }
+};
+

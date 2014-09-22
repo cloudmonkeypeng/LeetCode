@@ -1,23 +1,38 @@
 //说实话 这么列在这里完全没有统计作用，只是为了心里的快感，按照顺序刷少了一两个很正常....
 
+3Sum							[num.size()是 unsigned long 乱做减法有问题]
 3Sum Closest 
+4Sum
+
+
+A----------------------------
+Add Binary maxPathSum
+Add Two Numbers
+Anagrams
 
 B----------------------------
 Balanced Binary Tree
 Best Time to Buy and Sell Stock 
 Best Time to Buy and Sell Stock II
+Best Time to Buy and Sell Stock III
 Binary Tree Inorder Traversal 
 Binary Tree Level Order Traversal 
 Binary Tree Level Order Traversal II
+Binary Tree Maximum Path Sum 
 Binary Tree Postorder Traversal
 Binary Tree Preorder Traversal 
 Binary Tree Zigzag Level Order Traversal
 
 C----------------------------
+Candy
 Climbing Stairs
+Clone Graph						［一次通过，纸上多写一下］
+Combination Sum
+Combination Sum II 
 Combinations
 Container With Most Water
 Convert Sorted Array to Binary Search Tree
+Count and Say 
 
 F---------------------------
 Flatten Binary Tree to Linked List 	[注意分析问题]
@@ -102,6 +117,14 @@ Unique Paths
 Unique Paths II 
 
 V----------------------------
+Validate Binary Search Tree 
 Valid Sudoku
 Valid Palindrome
 Valid Parentheses 				[特殊值判断]
+
+W----------------------------
+WordBreak						[DP更好！！]	
+
+
+Z----------------------------
+ZigZag Conversion 
