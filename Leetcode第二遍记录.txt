@@ -70,6 +70,7 @@ Longest Consecutive Sequence
 
 M----------------------------
 Maximum Depth of Binary Tree
+Maximum Product Subarray
 Maximum Subarray
 Merge Two Sorted Lists 
 Merge Sorted Array 
