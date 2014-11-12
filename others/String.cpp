@@ -9,7 +9,7 @@ public:
 	myString(const char* str=NULL);
 	myString(const myString &other);
 	~myString(void);
-	myString & operator = (const myString &other);
+	myString& operator = (const myString &other);
     
 private:
 	char* m_data;
@@ -84,7 +84,7 @@ myString::~myString(){
     }
 }
 
-myString & myString::operator=(const myString &other){
+myString& myString::operator=(const myString &other){
 
     if(this!=&ohter){
 

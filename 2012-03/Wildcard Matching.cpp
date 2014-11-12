@@ -43,6 +43,7 @@ bool isMatch(const char *s, const char *p) {
             
             str = ++s;
             
+            
             ptr = p;
             
         

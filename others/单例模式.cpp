@@ -28,8 +28,8 @@ private:
 
 	~single();
 	single();
-	single(const single &temp);
-	single & operator = (const single &temp);
+	single(const single& temp);
+	single& operator = (const single& temp);
 
 	class sinlgeDel{
 
